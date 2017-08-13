@@ -56,15 +56,23 @@
 		F36C55F71F3FDD8D00D15000 /* needlzapp */ = {
 			isa = PBXGroup;
 			children = (
-				F36C55F81F3FDD8D00D15000 /* AppDelegate.swift */,
+				F36C560D1F3FDF0500D15000 /* Support */,
 				F36C55FA1F3FDD8D00D15000 /* ViewController.swift */,
 				F36C55FC1F3FDD8D00D15000 /* Main.storyboard */,
-				F36C56021F3FDD8D00D15000 /* Assets.xcassets */,
 				F36C56041F3FDD8D00D15000 /* LaunchScreen.storyboard */,
+			);
+			path = needlzapp;
+			sourceTree = "<group>";
+		};
+		F36C560D1F3FDF0500D15000 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F36C55F81F3FDD8D00D15000 /* AppDelegate.swift */,
+				F36C56021F3FDD8D00D15000 /* Assets.xcassets */,
 				F36C56071F3FDD8D00D15000 /* Info.plist */,
 				F36C55FF1F3FDD8D00D15000 /* needlzapp.xcdatamodeld */,
 			);
-			path = needlzapp;
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +275,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 826BP43VQM;
 				INFOPLIST_FILE = needlzapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Spire-Innovation.needlzapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 826BP43VQM;
 				INFOPLIST_FILE = needlzapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Spire-Innovation.needlzapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
