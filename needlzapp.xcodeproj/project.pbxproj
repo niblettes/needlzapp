@@ -13,6 +13,11 @@
 		F36C56011F3FDD8D00D15000 /* needlzapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F36C55FF1F3FDD8D00D15000 /* needlzapp.xcdatamodeld */; };
 		F36C56031F3FDD8D00D15000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36C56021F3FDD8D00D15000 /* Assets.xcassets */; };
 		F36C56061F3FDD8D00D15000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36C56041F3FDD8D00D15000 /* LaunchScreen.storyboard */; };
+		F36C560F1F40016200D15000 /* ObjectNeedle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C560E1F40016200D15000 /* ObjectNeedle.swift */; };
+		F36C56111F42410D00D15000 /* MessageViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C56101F42410D00D15000 /* MessageViewControll.swift */; };
+		F36C56131F436DFF00D15000 /* ObjectAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C56121F436DFF00D15000 /* ObjectAddress.swift */; };
+		F36C56151F439BF300D15000 /* ObjectCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C56141F439BF300D15000 /* ObjectCamera.swift */; };
+		F36C56171F4A981500D15000 /* ObjectAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C56161F4A981400D15000 /* ObjectAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F36C56021F3FDD8D00D15000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F36C56051F3FDD8D00D15000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F36C56071F3FDD8D00D15000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36C560E1F40016200D15000 /* ObjectNeedle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectNeedle.swift; path = ../ObjectNeedle.swift; sourceTree = "<group>"; };
+		F36C56101F42410D00D15000 /* MessageViewControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewControll.swift; sourceTree = "<group>"; };
+		F36C56121F436DFF00D15000 /* ObjectAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAddress.swift; sourceTree = "<group>"; };
+		F36C56141F439BF300D15000 /* ObjectCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectCamera.swift; sourceTree = "<group>"; };
+		F36C56161F4A981400D15000 /* ObjectAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 			children = (
 				F36C560D1F3FDF0500D15000 /* Support */,
 				F36C55FA1F3FDD8D00D15000 /* ViewController.swift */,
+				F36C56101F42410D00D15000 /* MessageViewControll.swift */,
+				F36C56121F436DFF00D15000 /* ObjectAddress.swift */,
+				F36C56161F4A981400D15000 /* ObjectAlert.swift */,
+				F36C56141F439BF300D15000 /* ObjectCamera.swift */,
+				F36C560E1F40016200D15000 /* ObjectNeedle.swift */,
 				F36C55FC1F3FDD8D00D15000 /* Main.storyboard */,
 				F36C56041F3FDD8D00D15000 /* LaunchScreen.storyboard */,
 			);
@@ -150,7 +165,12 @@
 			files = (
 				F36C56011F3FDD8D00D15000 /* needlzapp.xcdatamodeld in Sources */,
 				F36C55FB1F3FDD8D00D15000 /* ViewController.swift in Sources */,
+				F36C560F1F40016200D15000 /* ObjectNeedle.swift in Sources */,
+				F36C56171F4A981500D15000 /* ObjectAlert.swift in Sources */,
+				F36C56131F436DFF00D15000 /* ObjectAddress.swift in Sources */,
+				F36C56151F439BF300D15000 /* ObjectCamera.swift in Sources */,
 				F36C55F91F3FDD8D00D15000 /* AppDelegate.swift in Sources */,
+				F36C56111F42410D00D15000 /* MessageViewControll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +336,7 @@
 				F36C560C1F3FDD8D00D15000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
