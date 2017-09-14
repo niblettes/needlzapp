@@ -11,6 +11,7 @@ import UIKit
 
 class Alert {
     
+/*
     var myTitle: String
     var myMessage: String
 
@@ -34,4 +35,6 @@ class Alert {
     alertController.addAction(cancelAction)
     self.present(alertController, animated: true, completion: nil)
 
+ */
+ 
 } // CLOSE class

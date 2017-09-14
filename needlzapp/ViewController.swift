@@ -44,11 +44,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         
         // check camera
-        checkCameraAuthorized(){
-            
-        }
+        myCamera.checkAuthorized()
         
         // if can get location, get it
+
+/*
         myLocationManager.delegate = self
         
         if checkLocationAuthorization().status == "Success" {
@@ -58,6 +58,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         } else {
             
         } // CLOSE if
+*/
     
     } // CLOSE viewDidLoad
     
@@ -66,31 +67,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 // **********************************
 // FUNCTIONS: LOCATION
 // **********************************
-    
-    authorized
-    enabled
-    
-    
-    func setupStuff(){
-        
-        auth(){
-            
-            // auth completes then runs this
-            enabled()
-            
-        }
-        
-        print (results)
-        
-    }
-    
-    function auth() {
-    
-    }
-    
-    func enabled(){
-        
-    }
     
     
     private func checkLocationAuthorization() -> (status: String, message: String) {

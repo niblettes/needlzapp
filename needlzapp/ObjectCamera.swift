@@ -24,49 +24,45 @@ class Camera {
     // **********************************
     
     
-    func checkAuthorized() {
+    func checkAuthorized() -> Void {
         
-        var cameraAuthorizationResult: (String, String)
-        
-        let authStatus = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo)
-
-        
-        switch authStatus {
+        switch AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) {
         
         case .authorized:
             
-            cameraAuthorizationResult = ("Authorized", "Already have access to camera")
-            callback(cameraAuthorizationResult)
-       
+            self.alertUser("Authorized", "Already authorized to use camera")
+
         case .notDetermined:
             
             AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo) { response in
                
                 if response {
                    
-                    cameraAuthorizationResult = ("Success", "Thank you for authorizing camera access")
-                    callback(cameraAuthorizationResult)
-               
+                    self.displayCamera()
+                    
                 } else {
-                  
-                    cameraAuthorizationResult = ("Error", "Camera access authorization is not determined")
-                    callback(cameraAuthorizationResult)
+                    
+                    self.alertUser("Failed","Camera access authorization is not determined")
                 
                 } // CLOSE if
+
            
             } // CLOSE completion handler
+            
        
         case .restricted, .denied:
             
-            cameraAuthorizationResult = ("Error", "Camera access has been restricted or denied")
-            callback(cameraAuthorizationResult)
+            self.alertUser("Error", "Camera access has been restricted or denied")
         
         } // CLOSE switch
+        
+        
  
- 
-    
     } // CLOSE checkAuthorized
     
+    func alertUser(_ status: String, _ message: String) -> Void {
+        print ("My Callback: \(status), \(message)")
+    }
     
     
     func displayCamera(){
